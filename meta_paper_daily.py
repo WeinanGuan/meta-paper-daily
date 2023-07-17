@@ -11,12 +11,12 @@ import time
 import shutil
 import traceback
 
-KEYS = ['source-free', "object detection", "domain adaptation", "domain generalization","vision language"]
+KEYS = ['deepfake detection', "forgery detection", "action recognition", "domain generalization", "anomaly detection"]
 data, papers = {}, {}
 DateNow = datetime.date.today()
 DateNow = str(DateNow)
 DateNow = DateNow.replace('-', '.')
-per_key_papers = 15  # 只取15条
+per_key_papers = 100  # 只取15条
 
 
 # 对字典排序
